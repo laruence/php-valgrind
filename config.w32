@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("valgrind", "for valgrind support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("valgrind", "enable valgrind support", "no");
+
+if (PHP_VALGRIND != "no") {
+	EXTENSION("valgrind", "valgrind.c");
+}
+

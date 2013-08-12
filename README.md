@@ -11,3 +11,6 @@ for ($i=0;$i<10000;$i++) {
 callgrind_toggle();
 callgrind_dump();
 ```
+
+
+then you must run valgrind with auto-toggle and auto-instr both off
